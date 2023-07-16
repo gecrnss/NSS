@@ -186,6 +186,11 @@
     padding: 10px;
     font-size: 18px;
 }
+.outre-of-notice{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+}
 @media (max-width: 1023px)
 {
     .contact{
@@ -202,3 +207,40 @@
         
     }
 }
+
+.sliding-link-box {
+    overflow: hidden;
+    height: 200px; /* Adjust the height according to your preference */
+    position: relative;
+    /* width: 300px; */
+    /* float: right; */
+    background-color: white;
+    border: black solid 2px;
+    color: black;
+
+  }
+  
+  .link-list {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: slide 5s linear infinite;
+    /* animation-duration: 21s; */
+  }
+  
+  .link-list li {
+    line-height: 30px; /* Adjust the line-height according to your preference */
+  }
+  
+  @keyframes slide {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -300%; /* Adjust the distance according to the number of links and their height */
+    }
+  }
+  
