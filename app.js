@@ -37,13 +37,17 @@ fetch(data)
 var writedata = (data)=>{
 
 var noticeboard = document.getElementsByClassName("link-list")[0];
-noticeboard.style.animationDuration =  (data.length + data.length/2 + 1)+"s";
+noticeboard.style.animationDuration =  (data.length + data.length/2 + 5)+"s";
 for (let index = data.length - 1 ; index >= 0 ; index--) {
     const element = data[index];
+
+    if ((element.title) == "") {
+      continue;
+    }
     // element.date = "12-05-2003"
     let comp = document.createElement("li");
     comp.style.padding = '10px'
-    comp.innerHTML =`<a href=${element.link}>${element.title + " || "+"( " + element.date + " )"}</a>`
+    comp.innerHTML =`<a href= * ${element.link}>${element.title + " || "+"( " + element.date + " )"}</a>`
     noticeboard.appendChild(comp);
 }
 }

@@ -217,7 +217,6 @@
     background-color: white;
     border: black solid 2px;
     color: black;
-
   }
   
   .link-list {
@@ -226,9 +225,11 @@
     left: 15px;
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
+    /* background-color: #092ba7; */
     animation: slide 5s linear infinite;
     /* animation-duration: 21s; */
+    /* -o-animation-direction: alternate; */
   }
   
   .link-list li {
